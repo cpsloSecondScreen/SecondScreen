@@ -1,2 +1,2 @@
 # SecondScreen
-Cal Poly SLO capstone team creating a seconds creen experience in collaboraiton with Amazon
+Cal Poly SLO capstone team creating a second screen experience in collaboraiton with Amazon

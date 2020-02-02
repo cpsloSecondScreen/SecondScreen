@@ -1,0 +1,34 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:1af67d5e-e932-431e-8ad8-bca9dc9154fe",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_TeoUmfjG4",
+            "AppClientId": "127ab761opflk3qop5tl6h6ft1",
+            "AppClientSecret": "tveacbsroc6m0ljebvbma91ptpko3r88vahitvjud0snsgoibh6",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH"
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "flingphonestorage134338-env",
+            "Region": "us-east-1"
+        }
+    }
+}

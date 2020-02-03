@@ -38,9 +38,9 @@ import com.amazon.paapi5.v1.SearchItemsResource;
 import com.amazon.paapi5.v1.SearchItemsResponse;
 import com.amazon.paapi5.v1.api.DefaultApi;
 
-public class SearchItems {
+public class PASearch {
 
-    public static void main(String[] args) {
+    public static void SearchByKeyword(String keyword) {
 	ApiClient client = new ApiClient();
 
 	// Add your credentials
@@ -76,7 +76,7 @@ public class SearchItems {
 	List<SearchItemsResource> searchItemsResources = new ArrayList<SearchItemsResource>();
 	searchItemsResources.add(SearchItemsResource.ITEMINFO_TITLE);
 	searchItemsResources.add(SearchItemsResource.OFFERS_LISTINGS_PRICE);
-
+v
 	/*
 	 * Specify the category in which search request is to be made
 	 * For more details, refer:
@@ -85,7 +85,7 @@ public class SearchItems {
 	String searchIndex = "All";
 
 	// Specify keywords
-	String keywords = "Harry Potter";
+	String keywords = keyword;
 
 	// Sending the request
 	SearchItemsRequest searchItemsRequest = new SearchItemsRequest().partnerTag(partnerTag).keywords(keywords)
